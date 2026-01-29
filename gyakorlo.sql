@@ -70,9 +70,14 @@ ORDER BY megjelenesi_ev ASC;
 -- 12. feladat
 -- Keresd meg azokat a filmeket, amelyek 2010 és 2020 között jelentek meg ÉS értékelésük 7.5 felett van!
 
+SELECT * FROM filmek
+WHERE megjelenesi_ev BETWEEN 2010 AND 2020, ertekeles > 7.5
+
 -- 13. feladat
 -- Mutasd meg azokat a filmeket, amelyek hossza 90 és 120 perc között van!
 
 
 -- 14. feladat
 -- Listázd ki azokat a színészeket, akik nem magyar nemzetiségűek ÉS aktívak!
+SELECT * FROM szineszek
+WHERE nemzetiseg != 'magyar' AND aktiv = 'igen';
