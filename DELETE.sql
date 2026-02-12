@@ -48,5 +48,15 @@ WHERE nev = "Daniel Day-Lewis";
 
 --8. feladat--
 
-DELETE * FROM filmek
+DELETE FROM filmek
 WHERE megjelenesi_ev < 1990;
+
+--9.feladat--
+
+DELETE FROM szineszek
+WHERE aktiv != "igen";
+
+--10.feladat--
+
+DELETE FROM filmek
+WHERE cim = "Toy Story 4";
